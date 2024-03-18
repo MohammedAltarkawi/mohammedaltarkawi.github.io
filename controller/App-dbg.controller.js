@@ -8,9 +8,9 @@ sap.ui.define(["./BaseController"], function (__BaseController) {
   }
   const BaseController = _interopRequireDefault(__BaseController);
   /**
-   * @namespace mst.githubpage.controller
+   * @namespace github.controller
    */
-  const App = BaseController.extend("mst.githubpage.controller.App", {
+  const App = BaseController.extend("github.controller.App", {
     onInit: function _onInit() {
       // apply content density mode to root view
       this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());

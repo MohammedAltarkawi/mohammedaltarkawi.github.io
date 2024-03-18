@@ -8,7 +8,7 @@ import Router from "sap/ui/core/routing/Router";
 import History from "sap/ui/core/routing/History";
 
 /**
- * @namespace mst.githubpage.controller
+ * @namespace github.controller
  */
 export default abstract class BaseController extends Controller {
 	/**

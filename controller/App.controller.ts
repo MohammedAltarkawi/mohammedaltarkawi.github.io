@@ -1,7 +1,7 @@
 import BaseController from "./BaseController";
 
 /**
- * @namespace mst.githubpage.controller
+ * @namespace github.controller
  */
 export default class App extends BaseController {
 	public onInit(): void {

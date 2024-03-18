@@ -3,7 +3,7 @@ import models from "./model/models";
 import Device from "sap/ui/Device";
 
 /**
- * @namespace mst.githubpage
+ * @namespace github
  */
 export default class Component extends UIComponent {
 	public static metadata = {

@@ -1,6 +1,6 @@
 "use strict";
 
-sap.ui.define(["sap/m/MessageBox", "./BaseController", "sap/ui/core/Theming"], function (MessageBox, __BaseController, Theming) {
+sap.ui.define(["sap/m/MessageBox", "./BaseController"], function (MessageBox, __BaseController) {
   "use strict";
 
   function _interopRequireDefault(obj) {
@@ -8,35 +8,11 @@ sap.ui.define(["sap/m/MessageBox", "./BaseController", "sap/ui/core/Theming"], f
   }
   const BaseController = _interopRequireDefault(__BaseController);
   /**
-   * @namespace mst.githubpage.controller
+   * @namespace github.controller
    */
-  const Main = BaseController.extend("mst.githubpage.controller.Main", {
-    constructor: function constructor() {
-      BaseController.prototype.constructor.apply(this, arguments);
-      this._sLightTheme = "sap_horizon";
-      this._sDarkTheme = "sap_horizon_dark";
-      //@ts-expect-error
-      this.webclient = window.sap.cai.webclient;
-    },
+  const Main = BaseController.extend("github.controller.Main", {
     sayHello: function _sayHello() {
       MessageBox.show("Hello World!");
-    },
-    /**
-     * @returns {void}
-     */
-    toggleTheme: function _toggleTheme(oEvent) {
-      const oSwitch = oEvent.getSource();
-      const sState = oSwitch.getState();
-      if (sState) {
-        Theming.setTheme(this._sDarkTheme);
-        this.webclient.setTheme(this._sDarkTheme);
-      } else {
-        Theming.setTheme(this._sLightTheme);
-        this.webclient.setTheme(this._sLightTheme);
-      }
-    },
-    handlePopoverPress: function _handlePopoverPress() {
-      this.webclient.toggle();
     }
   });
   return Main;

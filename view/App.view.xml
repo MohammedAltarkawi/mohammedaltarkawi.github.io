@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="mst.githubpage.controller.App"
+	controllerName="github.controller.App"
 	displayBlock="true"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
