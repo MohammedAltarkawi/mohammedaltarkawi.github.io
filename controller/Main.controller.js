@@ -1,2 +1,2 @@
-"use strict";sap.ui.define(["sap/m/MessageBox","./BaseController"],function(e,t){"use strict";function n(e){return e&&e.__esModule&&typeof e.default!=="undefined"?e.default:e}const o=n(t);const s=o.extend("github.controller.Main",{sayHello:function t(){e.show("Hello World!")}});return s});
+"use strict";sap.ui.define(["sap/m/MessageBox","./BaseController"],function(e,t){"use strict";function n(e){return e&&e.__esModule&&typeof e.default!=="undefined"?e.default:e}const o=n(t);const s=o.extend("mst.github.controller.Main",{sayHello:function t(){e.show("Hello World!")}});return s});
 //# sourceMappingURL=Main.controller.js.map

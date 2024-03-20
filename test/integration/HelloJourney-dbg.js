@@ -13,7 +13,7 @@ sap.ui.define(["sap/ui/test/opaQunit", "./pages/MainPage"], function (opaTest, _
     // Arrangements
     onTheMainPage.iStartMyUIComponent({
       componentConfig: {
-        name: "github"
+        name: "mst.github"
       }
     });
 
@@ -36,7 +36,7 @@ sap.ui.define(["sap/ui/test/opaQunit", "./pages/MainPage"], function (opaTest, _
     // Arrangements
     onTheMainPage.iStartMyUIComponent({
       componentConfig: {
-        name: "github"
+        name: "mst.github"
       }
     });
 

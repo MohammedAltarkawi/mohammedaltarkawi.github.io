@@ -8,9 +8,9 @@ sap.ui.define(["sap/m/MessageBox", "./BaseController"], function (MessageBox, __
   }
   const BaseController = _interopRequireDefault(__BaseController);
   /**
-   * @namespace github.controller
+   * @namespace mst.github.controller
    */
-  const Main = BaseController.extend("github.controller.Main", {
+  const Main = BaseController.extend("mst.github.controller.Main", {
     sayHello: function _sayHello() {
       MessageBox.show("Hello World!");
     }

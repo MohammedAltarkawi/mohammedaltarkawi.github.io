@@ -4,9 +4,9 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/ui/core/UIComponent", "sap/ui/
   "use strict";
 
   /**
-   * @namespace github.controller
+   * @namespace mst.github.controller
    */
-  const BaseController = Controller.extend("github.controller.BaseController", {
+  const BaseController = Controller.extend("mst.github.controller.BaseController", {
     /**
      * Convenience method for accessing the component of the controller's view.
      * @returns The component of the controller's view

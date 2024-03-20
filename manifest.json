@@ -2,7 +2,7 @@
 	"_version": "1.12.0",
 
 	"sap.app": {
-		"id": "github",
+		"id": "mst.github",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"title": "{{appTitle}}",
@@ -24,14 +24,14 @@
 
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "github.view.App",
+			"viewName": "mst.github.view.App",
 			"type": "XML",
 			"async": true,
 			"id": "app"
 		},
 
 		"dependencies": {
-			"minUI5Version": "1.121.1",
+			"minUI5Version": "1.122.0",
 			"libs": {
 				"sap.ui.core": {},
 				"sap.m": {}
@@ -49,7 +49,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "github.i18n.i18n"
+					"bundleName": "mst.github.i18n.i18n"
 				}
 			}
 		},
@@ -58,7 +58,7 @@
 			"config": {
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
-				"viewPath": "github.view",
+				"viewPath": "mst.github.view",
 				"controlId": "app",
 				"controlAggregation": "pages",
 				"async": true

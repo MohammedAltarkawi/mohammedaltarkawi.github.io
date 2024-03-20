@@ -1,7 +1,7 @@
 import Opa5 from "sap/ui/test/Opa5";
 import Press from "sap/ui/test/actions/Press";
 
-const viewName = "github.view.Main";
+const viewName = "mst.github.view.Main";
 
 export default class MainPage extends Opa5 {
 	// Actions

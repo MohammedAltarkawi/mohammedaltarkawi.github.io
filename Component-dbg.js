@@ -8,9 +8,9 @@ sap.ui.define(["sap/ui/core/UIComponent", "./model/models", "sap/ui/Device"], fu
   }
   const models = _interopRequireDefault(__models);
   /**
-   * @namespace github
+   * @namespace mst.github
    */
-  const Component = UIComponent.extend("github.Component", {
+  const Component = UIComponent.extend("mst.github.Component", {
     metadata: {
       manifest: "json"
     },

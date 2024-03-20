@@ -1,6 +1,6 @@
 "use strict";
 
-sap.ui.define(["github/controller/Main.controller"], function (__Main) {
+sap.ui.define(["mst/github/controller/Main.controller"], function (__Main) {
   "use strict";
 
   function _interopRequireDefault(obj) {

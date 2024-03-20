@@ -1,4 +1,4 @@
-import Main from "github/controller/Main.controller";
+import Main from "mst/github/controller/Main.controller";
 
 QUnit.module("Sample Main controller test");
 
