@@ -18,15 +18,21 @@ sap.ui.define(["sap/m/MessageBox", "./BaseController", "sap/ui/core/Theming"], f
       //@ts-expect-error
       this.webclient = window.sap.cai.webclient;
     },
+    onInit: function _onInit() {
+      this._oSwitch = this.getView().byId('themeSwitch');
+      const sCurrentTheme = Theming.getTheme();
+      if (sCurrentTheme === this._sDarkTheme) {
+        this._oSwitch.setState(true);
+      }
+    },
     sayHello: function _sayHello() {
       MessageBox.show("Hello World!");
     },
     /**
      * @returns {void}
      */
-    toggleTheme: function _toggleTheme(oEvent) {
-      const oSwitch = oEvent.getSource();
-      const sState = oSwitch.getState();
+    toggleTheme: function _toggleTheme() {
+      const sState = this._oSwitch.getState();
       if (sState) {
         Theming.setTheme(this._sDarkTheme);
         this.webclient.setTheme(this._sDarkTheme);

@@ -7,7 +7,6 @@
 import MessageBox from "sap/m/MessageBox";
 import BaseController from "./BaseController";
 import Theming from "sap/ui/core/Theming";
-import Event from "sap/ui/base/Event";
 import Switch from "sap/m/Switch";
 
 
@@ -15,10 +14,19 @@ import Switch from "sap/m/Switch";
  * @namespace mst.github.controller
  */
 export default class Main extends BaseController {
+	private _oSwitch: Switch;
 	private _sLightTheme = "sap_horizon";
 	private _sDarkTheme = "sap_horizon_dark";
 	//@ts-expect-error
 	private webclient = window.sap.cai.webclient ;
+
+	onInit(): void {
+		this._oSwitch = this.getView().byId('themeSwitch') as Switch;
+		const sCurrentTheme = Theming.getTheme();
+		if(sCurrentTheme === this._sDarkTheme){
+			this._oSwitch.setState(true);
+		}
+	}
 
 	public sayHello(): void {
 		MessageBox.show("Hello World!");
@@ -28,9 +36,8 @@ export default class Main extends BaseController {
 	/**
 	 * @returns {void}
 	 */
-	public toggleTheme(oEvent: Event): void {
-		const oSwitch = oEvent.getSource() as Switch;
-		const sState = oSwitch.getState();
+	public toggleTheme(): void {
+		const sState = this._oSwitch.getState();
 		if (sState) {
 			Theming.setTheme(this._sDarkTheme);
 			this.webclient.setTheme(this._sDarkTheme);

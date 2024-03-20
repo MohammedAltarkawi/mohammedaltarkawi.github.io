@@ -10,7 +10,7 @@
 
 	<Page showHeader="true">
         <headerContent>
-            <Switch change=".toggleTheme" />
+            <Switch id="themeSwitch" change=".toggleTheme" />
         </headerContent>
         <footer class="mstPageFooter">
             <OverflowToolbar
