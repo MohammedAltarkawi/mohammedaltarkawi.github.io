@@ -8,27 +8,29 @@
 		formatter: 'mst/github/model/formatter'
 	}">
 
-	<Page
-		title="{i18n>appTitle}"
-		id="page">
-		<content>
-			<IllustratedMessage
-				title="{i18n>appTitle}"
-				illustrationType="sapIllus-SuccessHighFive"
-				enableVerticalResponsiveness="true"
-				description="{i18n>appDescription}">
-				<additionalContent>
-					<Button
-						id="helloButton"
-						text="{formatter: 'formatter.formatValue', path: 'i18n>btnText'}"
-						press="sayHello" />
-					<Button
-						id="helloButton"
-						text="{formatter: 'formatter.formatValue', path: 'i18n>btnText'}"
-						press="sayHello" />
-				</additionalContent>
-			</IllustratedMessage>
-		</content>
-	</Page>
+	<Page showHeader="true">
+        <headerContent>
+            <Switch change=".toggleTheme" />
+        </headerContent>
+        <footer class="mstPageFooter">
+            <OverflowToolbar
+                ariaHasPopup="Dialog"
+                class="mstPageFooter"
+            >
+                <layoutData>
+                    <OverflowToolbarLayoutData priority="AlwaysOverflow" />
+                </layoutData>
+                <ToolbarSpacer />
+                <Button
+                    icon="sap-icon://question-mark"
+                    ariaHasPopup="Dialog"
+                    type="Emphasized"
+                    width="5px"
+                    press="handlePopoverPress"
+                    class="roundClass"
+                />
+            </OverflowToolbar>
+        </footer>
+    </Page>
 
 </mvc:View>
