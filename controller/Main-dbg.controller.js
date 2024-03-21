@@ -1,12 +1,19 @@
 "use strict";
 
-sap.ui.define(["sap/m/MessageBox", "./BaseController", "sap/ui/core/Theming"], function (MessageBox, __BaseController, Theming) {
+sap.ui.define(["./BaseController", "sap/ui/core/Theming", "sap/ui/model/json/JSONModel", "../model/jobData", "sap/m/library"], function (__BaseController, Theming, JSONModel, ___model_jobData, sap_m_library) {
   "use strict";
 
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule && typeof obj.default !== "undefined" ? obj.default : obj;
   }
+  /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
+  /* eslint-disable @typescript-eslint/ban-ts-comment */
+  /* eslint-disable @typescript-eslint/no-unsafe-call */
+  /* eslint-disable @typescript-eslint/no-unsafe-assignment */
+  /* eslint-disable @typescript-eslint/no-unsafe-member-access */
   const BaseController = _interopRequireDefault(__BaseController);
+  const aJobsData = ___model_jobData["aJobsData"];
+  const URLHelper = sap_m_library["URLHelper"];
   /**
    * @namespace mst.github.controller
    */
@@ -19,14 +26,23 @@ sap.ui.define(["sap/m/MessageBox", "./BaseController", "sap/ui/core/Theming"], f
       this.webclient = window.sap.cai.webclient;
     },
     onInit: function _onInit() {
+      const oModel = new JSONModel({
+        jobs: aJobsData
+      });
+      this.getView().setModel(oModel, 'myJobs');
       this._oSwitch = this.getView().byId('themeSwitch');
       const sCurrentTheme = Theming.getTheme();
       if (sCurrentTheme === this._sDarkTheme) {
         this._oSwitch.setState(true);
       }
     },
-    sayHello: function _sayHello() {
-      MessageBox.show("Hello World!");
+    /**
+     * @returns {void}
+     */
+    onCompanyName: function _onCompanyName(oEvent) {
+      const oTimeLineItem = oEvent.getSource();
+      const obj = oTimeLineItem.getBindingContext('myJobs').getObject();
+      URLHelper.redirect(obj.link, true);
     },
     /**
      * @returns {void}
@@ -41,6 +57,9 @@ sap.ui.define(["sap/m/MessageBox", "./BaseController", "sap/ui/core/Theming"], f
         this.webclient.setTheme(this._sLightTheme);
       }
     },
+    /**
+     * @returns {void}
+     */
     handlePopoverPress: function _handlePopoverPress() {
       this.webclient.toggle();
     }

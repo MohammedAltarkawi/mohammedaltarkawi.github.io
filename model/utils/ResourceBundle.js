@@ -1,0 +1,2 @@
+"use strict";sap.ui.define([],function(){"use strict";class e{init(e){this._bndl=e}getText(e,t){return this._bndl.getText(e,t)}}const t=new e;var s={__esModule:true};s.ResourceBundlerAccessor=t;return s});
+//# sourceMappingURL=ResourceBundle.js.map

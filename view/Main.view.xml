@@ -1,17 +1,60 @@
 <mvc:View
-	controllerName="mst.github.controller.Main"
-	displayBlock="true"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:core="sap.ui.core"
-	core:require="{
+    controllerName="mst.github.controller.Main"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:fi="sap.ui.webc.fiori"
+    xmlns:l="sap.ui.layout"
+    core:require="{
 		formatter: 'mst/github/model/formatter'
-	}">
-
-	<Page showHeader="true">
+	}"
+>
+    <Page showHeader="true">
         <headerContent>
-            <Switch id="themeSwitch" change=".toggleTheme" />
+            <Switch
+                id="themeSwitch"
+                change=".toggleTheme"
+            />
         </headerContent>
+
+        <l:BlockLayout>
+            <l:BlockLayoutRow>
+                <l:BlockLayoutCell width="1.5%">
+                    <VBox>
+                        <FlexBox
+                            alignItems="Center"
+                            alignContent="Center"
+                            justifyContent="Center"
+                            direction="Column"
+                        >
+                            <Avatar
+                                displaySize="XL"
+                                displayShape="Square"
+                                src="./resources/img/altarkawi_mohammed.jpg"
+                                fallbackIcon="sap-icon://person-placeholder"
+                            />
+                        </FlexBox>
+                        <Text
+                            text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+                        />
+                    </VBox>
+                </l:BlockLayoutCell>
+                <l:BlockLayoutCell width="2.5%">
+                    <fi:Timeline items="{myJobs>/jobs}">
+                        <fi:TimelineItem
+                            icon="{myJobs>icon}"
+                            name="{myJobs>title}"
+                            nameClick="onCompanyName"
+                            subtitleText="{myJobs>text}"
+                            titleText="{myJobs>role}"
+                            nameClickable="true"
+                        />
+                    </fi:Timeline>
+                </l:BlockLayoutCell>
+            </l:BlockLayoutRow>
+        </l:BlockLayout>
+
         <footer class="mstPageFooter">
             <OverflowToolbar
                 ariaHasPopup="Dialog"
@@ -32,5 +75,4 @@
             </OverflowToolbar>
         </footer>
     </Page>
-
 </mvc:View>

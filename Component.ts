@@ -1,6 +1,9 @@
 import UIComponent from "sap/ui/core/UIComponent";
 import models from "./model/models";
+import ResourceBundle from 'sap/base/i18n/ResourceBundle';
 import Device from "sap/ui/Device";
+import ResourceModel from 'sap/ui/model/resource/ResourceModel';
+import { ResourceBundlerAccessor } from "./model/utils/ResourceBundle";
 
 /**
  * @namespace mst.github
@@ -13,6 +16,7 @@ export default class Component extends UIComponent {
 	private contentDensityClass: string;
 
 	public init(): void {
+		ResourceBundlerAccessor.init(this.getResourceBundle());
 		// call the base component's init function
 		super.init();
 
@@ -44,4 +48,9 @@ export default class Component extends UIComponent {
 		}
 		return this.contentDensityClass;
 	}
+
+	getResourceBundle(): ResourceBundle {
+        const resourceModel = <ResourceModel>this.getModel('i18n');
+        return resourceModel.getResourceBundle() as ResourceBundle;
+    }
 }

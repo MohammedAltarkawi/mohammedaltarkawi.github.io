@@ -4,10 +4,15 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 
-import MessageBox from "sap/m/MessageBox";
 import BaseController from "./BaseController";
 import Theming from "sap/ui/core/Theming";
 import Switch from "sap/m/Switch";
+import JSONModel from "sap/ui/model/json/JSONModel";
+import { aJobsData } from "../model/jobData";
+import Event from "sap/ui/base/Event";
+import TimelineItem from "sap/ui/webc/fiori/TimelineItem";
+import { jobS } from "../model/types";
+import { URLHelper } from "sap/m/library";
 
 
 /**
@@ -21,6 +26,10 @@ export default class Main extends BaseController {
 	private webclient = window.sap.cai.webclient ;
 
 	onInit(): void {
+		
+		const oModel = new JSONModel({jobs: aJobsData});
+		this.getView().setModel(oModel, 'myJobs')
+
 		this._oSwitch = this.getView().byId('themeSwitch') as Switch;
 		const sCurrentTheme = Theming.getTheme();
 		if(sCurrentTheme === this._sDarkTheme){
@@ -28,10 +37,14 @@ export default class Main extends BaseController {
 		}
 	}
 
-	public sayHello(): void {
-		MessageBox.show("Hello World!");
+	/**
+	 * @returns {void}
+	 */
+	public onCompanyName(oEvent: Event): void{
+		const oTimeLineItem = oEvent.getSource() as TimelineItem
+		const obj = oTimeLineItem.getBindingContext('myJobs').getObject() as jobS
+		URLHelper.redirect(obj.link, true)	
 	}
-
 
 	/**
 	 * @returns {void}
@@ -46,8 +59,11 @@ export default class Main extends BaseController {
 			this.webclient.setTheme(this._sLightTheme);
 		}
 	}
-
-	public handlePopoverPress(){
+	
+	/**
+	 * @returns {void}
+	 */
+	public handlePopoverPress(): void{
 		this.webclient.toggle();
 	}
 }

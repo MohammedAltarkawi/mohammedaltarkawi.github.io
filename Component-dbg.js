@@ -1,12 +1,13 @@
 "use strict";
 
-sap.ui.define(["sap/ui/core/UIComponent", "./model/models", "sap/ui/Device"], function (UIComponent, __models, Device) {
+sap.ui.define(["sap/ui/core/UIComponent", "./model/models", "sap/ui/Device", "./model/utils/ResourceBundle"], function (UIComponent, __models, Device, ___model_utils_ResourceBundle) {
   "use strict";
 
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule && typeof obj.default !== "undefined" ? obj.default : obj;
   }
   const models = _interopRequireDefault(__models);
+  const ResourceBundlerAccessor = ___model_utils_ResourceBundle["ResourceBundlerAccessor"];
   /**
    * @namespace mst.github
    */
@@ -15,6 +16,7 @@ sap.ui.define(["sap/ui/core/UIComponent", "./model/models", "sap/ui/Device"], fu
       manifest: "json"
     },
     init: function _init() {
+      ResourceBundlerAccessor.init(this.getResourceBundle());
       // call the base component's init function
       UIComponent.prototype.init.call(this);
 
@@ -44,6 +46,10 @@ sap.ui.define(["sap/ui/core/UIComponent", "./model/models", "sap/ui/Device"], fu
         }
       }
       return this.contentDensityClass;
+    },
+    getResourceBundle: function _getResourceBundle() {
+      const resourceModel = this.getModel('i18n');
+      return resourceModel.getResourceBundle();
     }
   });
   return Component;
