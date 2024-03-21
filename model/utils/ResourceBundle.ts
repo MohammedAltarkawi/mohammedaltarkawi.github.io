@@ -6,7 +6,7 @@ import ResourceBundle from 'sap/base/i18n/ResourceBundle';
 class ResourceBundlerAccessorDef {
     private _bndl: ResourceBundle;
 
-    init(bndl: ResourceBundle) {
+    public init(bndl: ResourceBundle) {
         this._bndl = bndl;
     }
 

@@ -41,12 +41,12 @@
                     </VBox>
                 </l:BlockLayoutCell>
                 <l:BlockLayoutCell width="2.5%">
-                    <fi:Timeline items="{myJobs>/jobs}">
+                    <fi:Timeline  items="{myJobs>/jobs}">
                         <fi:TimelineItem
                             icon="{myJobs>icon}"
                             name="{myJobs>title}"
                             nameClick="onCompanyName"
-                            subtitleText="{myJobs>text}"
+
                             titleText="{myJobs>role}"
                             nameClickable="true"
                         />
