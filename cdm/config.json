@@ -1,0 +1,1002 @@
+{
+  "_version": "3.0.0",
+  "site": {
+    "identification": {
+      "version": "3.1",
+      "id": "6d90b4b6-8890-4468-a4b9-79d334b7e55e",
+      "title": "Clean-UI5 Samples",
+      "description": "Clean-UI5 Samples"
+    },
+    "payload": {
+      "homeApp": {
+        "semanticObject": "Shell",
+        "action": "home"
+      },
+      "config": {
+        "ushellConfig": {
+          "renderers": {
+            "fiori2": {
+              "componentData": {
+                "config": {
+                  "enableSearch": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "groupsOrder": [
+        "JavaScript_and_SAPUI5",
+        "Modules_and_Classes",
+        "Others"
+      ]
+    }
+  },
+  "catalogs": {
+    "SampleApps": {
+      "identification": {
+        "id": "SampleApps",
+        "title": "Clean-UI5 Samples"
+      },
+      "payload": {
+        "viz": [
+          "xfrag",
+          "msgbox",
+          "vstate",
+          "rjsmdl",
+          "utctrl",
+          "utview",
+          "siprev",
+          "fgctl",
+          "ctlcmp",
+          "dlghlp",
+          "gstate",
+          "utmsbx",
+          "intrfc",
+          "singlt"
+        ]
+      }
+    }
+  },
+  "vizTypes": {},
+  "visualizations": {
+    "xfrag": {
+      "vizType": "sap.ushell.StaticAppLauncher",
+      "businessApp": "samples.applications.xfrag",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "samples.applications.xfrag",
+            "inboundId": "sample-xfrag",
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "msgbox": {
+      "vizType": "sap.ushell.StaticAppLauncher",
+      "businessApp": "samples.applications.msgbox",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "samples.applications.msgbox",
+            "inboundId": "sample-msgbox",
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "rjsmdl": {
+      "vizType": "sap.ushell.StaticAppLauncher",
+      "businessApp": "samples.applications.rjsmdl",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "samples.applications.rjsmdl",
+            "inboundId": "sample-rjsmdl",
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "vstate": {
+      "vizType": "sap.ushell.StaticAppLauncher",
+      "businessApp": "samples.applications.vstate",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "samples.applications.vstate",
+            "inboundId": "sample-vstate",
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "utctrl": {
+      "vizType": "sap.ushell.StaticAppLauncher",
+      "businessApp": "samples.applications.utctrl",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "samples.applications.utctrl",
+            "inboundId": "sample-utctrl",
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "utview": {
+      "vizType": "sap.ushell.StaticAppLauncher",
+      "businessApp": "samples.applications.utview",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "samples.applications.utview",
+            "inboundId": "sample-utview",
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "siprev": {
+      "vizType": "sap.ushell.StaticAppLauncher",
+      "businessApp": "samples.applications.siprev",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "samples.applications.siprev",
+            "inboundId": "sample-siprev",
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "fgctl": {
+      "vizType": "sap.ushell.StaticAppLauncher",
+      "businessApp": "samples.applications.fgctl",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "samples.applications.fgctl",
+            "inboundId": "sample-fgctl",
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "ctlcmp": {
+      "vizType": "sap.ushell.StaticAppLauncher",
+      "businessApp": "samples.applications.ctlcmp",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "samples.applications.ctlcmp",
+            "inboundId": "sample-ctlcmp",
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "dlghlp": {
+      "vizType": "sap.ushell.StaticAppLauncher",
+      "businessApp": "samples.applications.dlghlp",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "samples.applications.dlghlp",
+            "inboundId": "sample-dlghlp",
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "gstate": {
+      "vizType": "sap.ushell.DynamicAppLauncher",
+      "businessApp": "samples.applications.gstate",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "samples.applications.gstate",
+            "inboundId": "sample-gstate",
+            "parameters": {}
+          },
+          "indicatorDataSource": {
+            "path": "/mock/gstate",
+            "refresh": 0
+          }
+        }
+      }
+    },
+    "utmsbx": {
+      "vizType": "sap.ushell.StaticAppLauncher",
+      "businessApp": "samples.applications.utmsbx",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "samples.applications.utmsbx",
+            "inboundId": "sample-utmsbx",
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "intrfc": {
+      "vizType": "sap.ushell.StaticAppLauncher",
+      "businessApp": "samples.applications.intrfc",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "samples.applications.intrfc",
+            "inboundId": "sample-intrfc",
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "singlt": {
+      "vizType": "sap.ushell.StaticAppLauncher",
+      "businessApp": "samples.applications.singlt",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "samples.applications.singlt",
+            "inboundId": "sample-singlt",
+            "parameters": {}
+          }
+        }
+      }
+    }
+  },
+  "applications": {
+    "samples.applications.xfrag": {
+      "sap.app": {
+        "id": "samples.applications.xfrag",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "xfrag",
+        "subTitle": "Literal XML fragments",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-xfrag": {
+              "semanticObject": "sample",
+              "action": "xfrag",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "samples.applications.xfrag"
+      },
+      "sap.flp": {
+        "businessApp": "samples.applications.xfrag",
+        "defaultLauncher": "sample-xfrag"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://developer-settings"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/xfrag"
+        }
+      }
+    },
+    "samples.applications.msgbox": {
+      "sap.app": {
+        "id": "samples.applications.msgbox",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "msgbox",
+        "subTitle": "messageBox helper",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-msgbox": {
+              "semanticObject": "sample",
+              "action": "msgbox",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "samples.applications.msgbox"
+      },
+      "sap.flp": {
+        "businessApp": "samples.applications.msgbox",
+        "defaultLauncher": "sample-msgbox"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://popup-window"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/msgbox"
+        }
+      }
+    },
+    "samples.applications.vstate": {
+      "sap.app": {
+        "id": "samples.applications.vstate",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "vstate",
+        "subTitle": "Value State example",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-vstate": {
+              "semanticObject": "sample",
+              "action": "vstate",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "samples.applications.vstate"
+      },
+      "sap.flp": {
+        "businessApp": "samples.applications.vstate",
+        "defaultLauncher": "sample-vstate"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://validate"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/vstate"
+        }
+      }
+    },
+    "samples.applications.rjsmdl": {
+      "sap.app": {
+        "id": "samples.applications.rjsmdl",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "rjsmdl",
+        "subTitle": "Reactive JSON model",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-rjsmdl": {
+              "semanticObject": "sample",
+              "action": "rjsmdl",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "samples.applications.rjsmdl"
+      },
+      "sap.flp": {
+        "businessApp": "samples.applications.rjsmdl",
+        "defaultLauncher": "sample-rjsmdl"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://activate"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/rjsmdl"
+        }
+      }
+    },
+    "samples.applications.utctrl": {
+      "sap.app": {
+        "id": "samples.applications.utctrl",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "utctrl",
+        "subTitle": "Controller unit test",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-utctrl": {
+              "semanticObject": "sample",
+              "action": "utctrl",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "samples.applications.utctrl"
+      },
+      "sap.flp": {
+        "businessApp": "samples.applications.utctrl",
+        "defaultLauncher": "sample-utctrl"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://approvals"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/utctrl"
+        }
+      }
+    },
+    "samples.applications.utview": {
+      "sap.app": {
+        "id": "samples.applications.utview",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "utview",
+        "subTitle": "View unit test",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-utview": {
+              "semanticObject": "sample",
+              "action": "utview",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "samples.applications.utview"
+      },
+      "sap.flp": {
+        "businessApp": "samples.applications.utview",
+        "defaultLauncher": "sample-utview"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://approvals"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/utview"
+        }
+      }
+    },
+    "samples.applications.siprev": {
+      "sap.app": {
+        "id": "samples.applications.siprev",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "siprev",
+        "subTitle": "Special Instructions preview",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-siprev": {
+              "semanticObject": "sample",
+              "action": "siprev",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "samples.applications.siprev"
+      },
+      "sap.flp": {
+        "businessApp": "samples.applications.siprev",
+        "defaultLauncher": "sample-siprev"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://my-sales-order"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/siprev"
+        }
+      }
+    },
+    "samples.applications.fgctl": {
+      "sap.app": {
+        "id": "samples.applications.fgctl",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "fgctl",
+        "subTitle": "Fragment as a control",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-fgctl": {
+              "semanticObject": "sample",
+              "action": "fgctl",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "samples.applications.fgctl"
+      },
+      "sap.flp": {
+        "businessApp": "samples.applications.fgctl",
+        "defaultLauncher": "sample-fgctl"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://wrench"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/fgctl"
+        }
+      }
+    },
+    "samples.applications.ctlcmp": {
+      "sap.app": {
+        "id": "samples.applications.ctlcmp",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "ctlcmp",
+        "subTitle": "Composing controller",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-ctlcmp": {
+              "semanticObject": "sample",
+              "action": "ctlcmp",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "samples.applications.ctlcmp"
+      },
+      "sap.flp": {
+        "businessApp": "samples.applications.ctlcmp",
+        "defaultLauncher": "sample-ctlcmp"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://combine"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/ctlcmp"
+        }
+      }
+    },
+    "samples.applications.dlghlp": {
+      "sap.app": {
+        "id": "samples.applications.dlghlp",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "dlghlp",
+        "subTitle": "Dialog helper",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-dlghlp": {
+              "semanticObject": "sample",
+              "action": "dlghlp",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "samples.applications.dlghlp"
+      },
+      "sap.flp": {
+        "businessApp": "samples.applications.dlghlp",
+        "defaultLauncher": "sample-dlghlp"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://popup-window"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/dlghlp"
+        }
+      }
+    },
+    "samples.applications.gstate": {
+      "sap.app": {
+        "id": "samples.applications.gstate",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "gstate",
+        "subTitle": "Illustrates globals",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-gstate": {
+              "semanticObject": "sample",
+              "action": "gstate",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "samples.applications.gstate"
+      },
+      "sap.flp": {
+        "businessApp": "samples.applications.gstate",
+        "defaultLauncher": "sample-gstate"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://connected"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/gstate"
+        }
+      }
+    },
+    "samples.applications.utmsbx": {
+      "sap.app": {
+        "id": "samples.applications.utmsbx",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "utmsbx",
+        "subTitle": "messageBox unit test",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-utmsbx": {
+              "semanticObject": "sample",
+              "action": "utmsbx",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "samples.applications.utmsbx"
+      },
+      "sap.flp": {
+        "businessApp": "samples.applications.utmsbx",
+        "defaultLauncher": "sample-utmsbx"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://approvals"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/utmsbx"
+        }
+      }
+    },
+    "samples.applications.intrfc": {
+      "sap.app": {
+        "id": "samples.applications.intrfc",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "intrfc",
+        "subTitle": "Interface testing",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-intrfc": {
+              "semanticObject": "sample",
+              "action": "intrfc",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "samples.applications.intrfc"
+      },
+      "sap.flp": {
+        "businessApp": "samples.applications.intrfc",
+        "defaultLauncher": "sample-intrfc"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://technical-object"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/intrfc"
+        }
+      }
+    },
+    "samples.applications.singlt": {
+      "sap.app": {
+        "id": "samples.applications.singlt",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "singlt",
+        "subTitle": "Singleton example",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-singlt": {
+              "semanticObject": "sample",
+              "action": "singlt",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "samples.applications.singlt"
+      },
+      "sap.flp": {
+        "businessApp": "samples.applications.singlt",
+        "defaultLauncher": "sample-singlt"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://favorite"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/singlt"
+        }
+      }
+    }
+  },
+  "groups": {
+    "JavaScript_and_SAPUI5": {
+      "identification": {
+        "id": "JavaScript_and_SAPUI5",
+        "title": "JavaScript and SAPUI5"
+      },
+      "payload": {
+        "tiles": [
+          {
+            "id": "00000",
+            "vizId": "xfrag"
+          },
+          {
+            "id": "00001",
+            "vizId": "msgbox"
+          },
+          {
+            "id": "00002",
+            "vizId": "vstate"
+          },
+          {
+            "id": "00003",
+            "vizId": "rjsmdl"
+          }
+        ],
+        "links": [],
+        "groups": []
+      }
+    },
+    "Modules_and_Classes": {
+      "identification": {
+        "id": "Modules_and_Classes",
+        "title": "Modules and Classes"
+      },
+      "payload": {
+        "tiles": [
+          {
+            "id": "00004",
+            "vizId": "utctrl"
+          },
+          {
+            "id": "00005",
+            "vizId": "utview"
+          },
+          {
+            "id": "00006",
+            "vizId": "siprev"
+          },
+          {
+            "id": "00007",
+            "vizId": "fgctl"
+          },
+          {
+            "id": "00008",
+            "vizId": "ctlcmp"
+          },
+          {
+            "id": "00009",
+            "vizId": "dlghlp"
+          },
+          {
+            "id": "00011",
+            "vizId": "gstate"
+          },
+          {
+            "id": "00012",
+            "vizId": "utmsbx"
+          },
+          {
+            "id": "00013",
+            "vizId": "singlt"
+          },
+          {
+            "id": "00014",
+            "vizId": "intrfc"
+          }
+        ],
+        "links": [],
+        "groups": []
+      }
+    },
+    "Others": {
+      "identification": {
+        "id": "Others",
+        "title": "Others"
+      },
+      "payload": {
+        "tiles": [
+          {
+            "id": "00010",
+            "icon": "github.png",
+            "title": "Fork me on GitHub",
+            "subTitle": "Access source codes",
+            "isBookmark": true,
+            "target": {
+              "type": "URL",
+              "url": "https://github.com/Clean-UI5/samples"
+            }
+          }
+        ],
+        "links": [],
+        "groups": []
+      }
+    }
+  },
+  "systemAliases": {}
+}
