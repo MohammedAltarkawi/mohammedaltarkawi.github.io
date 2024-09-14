@@ -1,0 +1,2 @@
+"use strict";sap.ui.define(["./GenericStateModel"],function(e){"use strict";function t(e){return e&&e.__esModule&&typeof e.default!=="undefined"?e.default:e}const n=t(e);class s{busy=false;APIs=[];versions=[{year:"2022"},{year:"2023"}];setAPI(){let e=arguments.length>0&&arguments[0]!==undefined?arguments[0]:[];this.APIs=e}}const r=new n(new s);const o=r.getState();var u={__esModule:true};u.StateMainControllerModel=r;u.MainStateController=o;return u});
+//# sourceMappingURL=MainControllerState.js.map

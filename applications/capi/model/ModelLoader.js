@@ -1,0 +1,2 @@
+"use strict";sap.ui.define(["sap/ui/model/json/JSONModel","./Enums"],function(e,s){"use strict";const t=s["LINKS"];class a{static getYear(s){return new Promise(a=>{let r;switch(s){case"2022":r=t.V2022;break;case"2023":r=t.V2023;break}const c=new e(r);c.attachRequestCompleted(()=>{a(c)})})}}var r={__esModule:true};r.ModelLoader=a;return r});
+//# sourceMappingURL=ModelLoader.js.map

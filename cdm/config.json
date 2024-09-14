@@ -41,6 +41,7 @@
       "payload": {
         "viz": [
           "xfrag",
+          "capi",
           "msgbox",
           "vstate",
           "rjsmdl",
@@ -68,6 +69,19 @@
           "target": {
             "appId": "com.altarkawi.xfrag",
             "inboundId": "sample-xfrag",
+            "parameters": {}
+          }
+        }
+      }
+    },
+    "capi": {
+      "vizType": "sap.ushell.StaticAppLauncher",
+      "businessApp": "com.altarkawi.capi",
+      "vizConfig": {
+        "sap.flp": {
+          "target": {
+            "appId": "com.altarkawi.capi",
+            "inboundId": "sample-capi",
             "parameters": {}
           }
         }
@@ -291,6 +305,52 @@
       "sap.platform.runtime": {
         "componentProperties": {
           "url": "applications/xfrag"
+        }
+      }
+    },
+    "com.altarkawi.capi": {
+      "sap.app": {
+        "id": "com.altarkawi.capi",
+        "applicationVersion": {
+          "version": "1.0.0"
+        },
+        "title": "CAPI",
+        "subTitle": "Released Cloud APIs for ABAP Cloud ",
+        "crossNavigation": {
+          "inbounds": {
+            "sample-capi": {
+              "semanticObject": "sample",
+              "action": "capi",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              }
+            }
+          }
+        }
+      },
+      "sap.ui5": {
+        "models": {},
+        "componentName": "com.altarkawi.capi"
+      },
+      "sap.flp": {
+        "businessApp": "com.altarkawi.capi",
+        "defaultLauncher": "sample-capi"
+      },
+      "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "sap-icon://cloud"
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      "sap.platform.runtime": {
+        "componentProperties": {
+          "url": "applications/capi"
         }
       }
     },
@@ -916,6 +976,10 @@
           {
             "id": "00003",
             "vizId": "rjsmdl"
+          },
+          {
+            "id": "00004",
+            "vizId": "capi"
           }
         ],
         "links": [],
