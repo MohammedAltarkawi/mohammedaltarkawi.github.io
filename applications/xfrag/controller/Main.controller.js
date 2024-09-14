@@ -3,7 +3,7 @@ sap.ui.define([
   'samples/util/xfrag',
   'sap/m/MessageToast'
 ], function (BaseController, xfrag, MessageToast) {
-  return BaseController.extend('samples.applications.xfrag.controller.Main', {
+  return BaseController.extend('com.altarkawi.xfrag.controller.Main', {
     onInit: async function () {
       const button = await xfrag`
       <m:Button xmlns:m="sap.m"

@@ -1,5 +1,5 @@
 <mvc:View
-  controllerName="samples.applications.rjsmdl.controller.Main"
+  controllerName="com.altarkawi.rjsmdl.controller.Main"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m"
   xmlns:f="sap.ui.layout.form"
@@ -35,16 +35,16 @@
                   <core:Item key="2024" text="2024" />
                   <core:Item key="2025" text="2025" />
                   <core:Item key="2026" text="2026" />
-                </Select>    
+                </Select>
                 <Label text="{i18n>form.org.label}" />
-                <Input value="{/org}"/>
+                <Input value="{/org}" />
               </f:content>
             </f:SimpleForm>
           </VBox>
         </content>
         <footer>
           <OverflowToolbar>
-            <ToolbarSpacer/>
+            <ToolbarSpacer />
             <Button text="{i18n>btn.save}" type="Accept" press="onSave" />
           </OverflowToolbar>
         </footer>

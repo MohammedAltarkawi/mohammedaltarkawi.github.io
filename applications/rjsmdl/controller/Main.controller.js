@@ -5,7 +5,7 @@ sap.ui.define([
   'sap/m/MessageToast'
 // eslint-disable-next-line max-params
 ], function (BaseController, ViewState, asyncEventHandler, MessageToast) {
-  return BaseController.extend('samples.applications.rjsmdl.controller.Main', {
+  return BaseController.extend('com.altarkawi.rjsmdl.controller.Main', {
     onInit: function () {
       this.viewState = new ViewState('Clean UI5', 2022);
       this.view.setModel(this.viewState.model);

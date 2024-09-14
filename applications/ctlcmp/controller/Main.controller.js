@@ -6,7 +6,7 @@ sap.ui.define([
   './Main/part2'
 // eslint-disable-next-line max-params
 ], function (BaseController, controllerCompose, common, part1, part2) {
-  return BaseController.extend('samples.applications.ctlcmp.controller.Main',
+  return BaseController.extend('com.altarkawi.ctlcmp.controller.Main',
     controllerCompose(common, part1, part2)
   );
 });

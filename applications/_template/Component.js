@@ -1,7 +1,7 @@
 sap.ui.define([
   'sap/ui/core/UIComponent'
 ], function (UIComponent) {
-  return UIComponent.extend('samples.applications._template.Component', {
+  return UIComponent.extend('com.altarkawi._template.Component', {
     metadata: {
       manifest: 'json'
     }

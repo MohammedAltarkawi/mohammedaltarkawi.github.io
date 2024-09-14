@@ -62,11 +62,11 @@
   "visualizations": {
     "xfrag": {
       "vizType": "sap.ushell.StaticAppLauncher",
-      "businessApp": "samples.applications.xfrag",
+      "businessApp": "com.altarkawi.xfrag",
       "vizConfig": {
         "sap.flp": {
           "target": {
-            "appId": "samples.applications.xfrag",
+            "appId": "com.altarkawi.xfrag",
             "inboundId": "sample-xfrag",
             "parameters": {}
           }
@@ -75,11 +75,11 @@
     },
     "msgbox": {
       "vizType": "sap.ushell.StaticAppLauncher",
-      "businessApp": "samples.applications.msgbox",
+      "businessApp": "com.altarkawi.msgbox",
       "vizConfig": {
         "sap.flp": {
           "target": {
-            "appId": "samples.applications.msgbox",
+            "appId": "com.altarkawi.msgbox",
             "inboundId": "sample-msgbox",
             "parameters": {}
           }
@@ -88,11 +88,11 @@
     },
     "rjsmdl": {
       "vizType": "sap.ushell.StaticAppLauncher",
-      "businessApp": "samples.applications.rjsmdl",
+      "businessApp": "com.altarkawi.rjsmdl",
       "vizConfig": {
         "sap.flp": {
           "target": {
-            "appId": "samples.applications.rjsmdl",
+            "appId": "com.altarkawi.rjsmdl",
             "inboundId": "sample-rjsmdl",
             "parameters": {}
           }
@@ -101,11 +101,11 @@
     },
     "vstate": {
       "vizType": "sap.ushell.StaticAppLauncher",
-      "businessApp": "samples.applications.vstate",
+      "businessApp": "com.altarkawi.vstate",
       "vizConfig": {
         "sap.flp": {
           "target": {
-            "appId": "samples.applications.vstate",
+            "appId": "com.altarkawi.vstate",
             "inboundId": "sample-vstate",
             "parameters": {}
           }
@@ -114,11 +114,11 @@
     },
     "utctrl": {
       "vizType": "sap.ushell.StaticAppLauncher",
-      "businessApp": "samples.applications.utctrl",
+      "businessApp": "com.altarkawi.utctrl",
       "vizConfig": {
         "sap.flp": {
           "target": {
-            "appId": "samples.applications.utctrl",
+            "appId": "com.altarkawi.utctrl",
             "inboundId": "sample-utctrl",
             "parameters": {}
           }
@@ -127,11 +127,11 @@
     },
     "utview": {
       "vizType": "sap.ushell.StaticAppLauncher",
-      "businessApp": "samples.applications.utview",
+      "businessApp": "com.altarkawi.utview",
       "vizConfig": {
         "sap.flp": {
           "target": {
-            "appId": "samples.applications.utview",
+            "appId": "com.altarkawi.utview",
             "inboundId": "sample-utview",
             "parameters": {}
           }
@@ -140,11 +140,11 @@
     },
     "siprev": {
       "vizType": "sap.ushell.StaticAppLauncher",
-      "businessApp": "samples.applications.siprev",
+      "businessApp": "com.altarkawi.siprev",
       "vizConfig": {
         "sap.flp": {
           "target": {
-            "appId": "samples.applications.siprev",
+            "appId": "com.altarkawi.siprev",
             "inboundId": "sample-siprev",
             "parameters": {}
           }
@@ -153,11 +153,11 @@
     },
     "fgctl": {
       "vizType": "sap.ushell.StaticAppLauncher",
-      "businessApp": "samples.applications.fgctl",
+      "businessApp": "com.altarkawi.fgctl",
       "vizConfig": {
         "sap.flp": {
           "target": {
-            "appId": "samples.applications.fgctl",
+            "appId": "com.altarkawi.fgctl",
             "inboundId": "sample-fgctl",
             "parameters": {}
           }
@@ -166,11 +166,11 @@
     },
     "ctlcmp": {
       "vizType": "sap.ushell.StaticAppLauncher",
-      "businessApp": "samples.applications.ctlcmp",
+      "businessApp": "com.altarkawi.ctlcmp",
       "vizConfig": {
         "sap.flp": {
           "target": {
-            "appId": "samples.applications.ctlcmp",
+            "appId": "com.altarkawi.ctlcmp",
             "inboundId": "sample-ctlcmp",
             "parameters": {}
           }
@@ -179,11 +179,11 @@
     },
     "dlghlp": {
       "vizType": "sap.ushell.StaticAppLauncher",
-      "businessApp": "samples.applications.dlghlp",
+      "businessApp": "com.altarkawi.dlghlp",
       "vizConfig": {
         "sap.flp": {
           "target": {
-            "appId": "samples.applications.dlghlp",
+            "appId": "com.altarkawi.dlghlp",
             "inboundId": "sample-dlghlp",
             "parameters": {}
           }
@@ -192,11 +192,11 @@
     },
     "gstate": {
       "vizType": "sap.ushell.DynamicAppLauncher",
-      "businessApp": "samples.applications.gstate",
+      "businessApp": "com.altarkawi.gstate",
       "vizConfig": {
         "sap.flp": {
           "target": {
-            "appId": "samples.applications.gstate",
+            "appId": "com.altarkawi.gstate",
             "inboundId": "sample-gstate",
             "parameters": {}
           },
@@ -209,11 +209,11 @@
     },
     "utmsbx": {
       "vizType": "sap.ushell.StaticAppLauncher",
-      "businessApp": "samples.applications.utmsbx",
+      "businessApp": "com.altarkawi.utmsbx",
       "vizConfig": {
         "sap.flp": {
           "target": {
-            "appId": "samples.applications.utmsbx",
+            "appId": "com.altarkawi.utmsbx",
             "inboundId": "sample-utmsbx",
             "parameters": {}
           }
@@ -222,11 +222,11 @@
     },
     "intrfc": {
       "vizType": "sap.ushell.StaticAppLauncher",
-      "businessApp": "samples.applications.intrfc",
+      "businessApp": "com.altarkawi.intrfc",
       "vizConfig": {
         "sap.flp": {
           "target": {
-            "appId": "samples.applications.intrfc",
+            "appId": "com.altarkawi.intrfc",
             "inboundId": "sample-intrfc",
             "parameters": {}
           }
@@ -235,11 +235,11 @@
     },
     "singlt": {
       "vizType": "sap.ushell.StaticAppLauncher",
-      "businessApp": "samples.applications.singlt",
+      "businessApp": "com.altarkawi.singlt",
       "vizConfig": {
         "sap.flp": {
           "target": {
-            "appId": "samples.applications.singlt",
+            "appId": "com.altarkawi.singlt",
             "inboundId": "sample-singlt",
             "parameters": {}
           }
@@ -248,9 +248,9 @@
     }
   },
   "applications": {
-    "samples.applications.xfrag": {
+    "com.altarkawi.xfrag": {
       "sap.app": {
-        "id": "samples.applications.xfrag",
+        "id": "com.altarkawi.xfrag",
         "applicationVersion": {
           "version": "1.0.0"
         },
@@ -271,10 +271,10 @@
       },
       "sap.ui5": {
         "models": {},
-        "componentName": "samples.applications.xfrag"
+        "componentName": "com.altarkawi.xfrag"
       },
       "sap.flp": {
-        "businessApp": "samples.applications.xfrag",
+        "businessApp": "com.altarkawi.xfrag",
         "defaultLauncher": "sample-xfrag"
       },
       "sap.ui": {
@@ -294,9 +294,9 @@
         }
       }
     },
-    "samples.applications.msgbox": {
+    "com.altarkawi.msgbox": {
       "sap.app": {
-        "id": "samples.applications.msgbox",
+        "id": "com.altarkawi.msgbox",
         "applicationVersion": {
           "version": "1.0.0"
         },
@@ -317,10 +317,10 @@
       },
       "sap.ui5": {
         "models": {},
-        "componentName": "samples.applications.msgbox"
+        "componentName": "com.altarkawi.msgbox"
       },
       "sap.flp": {
-        "businessApp": "samples.applications.msgbox",
+        "businessApp": "com.altarkawi.msgbox",
         "defaultLauncher": "sample-msgbox"
       },
       "sap.ui": {
@@ -340,9 +340,9 @@
         }
       }
     },
-    "samples.applications.vstate": {
+    "com.altarkawi.vstate": {
       "sap.app": {
-        "id": "samples.applications.vstate",
+        "id": "com.altarkawi.vstate",
         "applicationVersion": {
           "version": "1.0.0"
         },
@@ -363,10 +363,10 @@
       },
       "sap.ui5": {
         "models": {},
-        "componentName": "samples.applications.vstate"
+        "componentName": "com.altarkawi.vstate"
       },
       "sap.flp": {
-        "businessApp": "samples.applications.vstate",
+        "businessApp": "com.altarkawi.vstate",
         "defaultLauncher": "sample-vstate"
       },
       "sap.ui": {
@@ -386,9 +386,9 @@
         }
       }
     },
-    "samples.applications.rjsmdl": {
+    "com.altarkawi.rjsmdl": {
       "sap.app": {
-        "id": "samples.applications.rjsmdl",
+        "id": "com.altarkawi.rjsmdl",
         "applicationVersion": {
           "version": "1.0.0"
         },
@@ -409,10 +409,10 @@
       },
       "sap.ui5": {
         "models": {},
-        "componentName": "samples.applications.rjsmdl"
+        "componentName": "com.altarkawi.rjsmdl"
       },
       "sap.flp": {
-        "businessApp": "samples.applications.rjsmdl",
+        "businessApp": "com.altarkawi.rjsmdl",
         "defaultLauncher": "sample-rjsmdl"
       },
       "sap.ui": {
@@ -432,9 +432,9 @@
         }
       }
     },
-    "samples.applications.utctrl": {
+    "com.altarkawi.utctrl": {
       "sap.app": {
-        "id": "samples.applications.utctrl",
+        "id": "com.altarkawi.utctrl",
         "applicationVersion": {
           "version": "1.0.0"
         },
@@ -455,10 +455,10 @@
       },
       "sap.ui5": {
         "models": {},
-        "componentName": "samples.applications.utctrl"
+        "componentName": "com.altarkawi.utctrl"
       },
       "sap.flp": {
-        "businessApp": "samples.applications.utctrl",
+        "businessApp": "com.altarkawi.utctrl",
         "defaultLauncher": "sample-utctrl"
       },
       "sap.ui": {
@@ -478,9 +478,9 @@
         }
       }
     },
-    "samples.applications.utview": {
+    "com.altarkawi.utview": {
       "sap.app": {
-        "id": "samples.applications.utview",
+        "id": "com.altarkawi.utview",
         "applicationVersion": {
           "version": "1.0.0"
         },
@@ -501,10 +501,10 @@
       },
       "sap.ui5": {
         "models": {},
-        "componentName": "samples.applications.utview"
+        "componentName": "com.altarkawi.utview"
       },
       "sap.flp": {
-        "businessApp": "samples.applications.utview",
+        "businessApp": "com.altarkawi.utview",
         "defaultLauncher": "sample-utview"
       },
       "sap.ui": {
@@ -524,9 +524,9 @@
         }
       }
     },
-    "samples.applications.siprev": {
+    "com.altarkawi.siprev": {
       "sap.app": {
-        "id": "samples.applications.siprev",
+        "id": "com.altarkawi.siprev",
         "applicationVersion": {
           "version": "1.0.0"
         },
@@ -547,10 +547,10 @@
       },
       "sap.ui5": {
         "models": {},
-        "componentName": "samples.applications.siprev"
+        "componentName": "com.altarkawi.siprev"
       },
       "sap.flp": {
-        "businessApp": "samples.applications.siprev",
+        "businessApp": "com.altarkawi.siprev",
         "defaultLauncher": "sample-siprev"
       },
       "sap.ui": {
@@ -570,9 +570,9 @@
         }
       }
     },
-    "samples.applications.fgctl": {
+    "com.altarkawi.fgctl": {
       "sap.app": {
-        "id": "samples.applications.fgctl",
+        "id": "com.altarkawi.fgctl",
         "applicationVersion": {
           "version": "1.0.0"
         },
@@ -593,10 +593,10 @@
       },
       "sap.ui5": {
         "models": {},
-        "componentName": "samples.applications.fgctl"
+        "componentName": "com.altarkawi.fgctl"
       },
       "sap.flp": {
-        "businessApp": "samples.applications.fgctl",
+        "businessApp": "com.altarkawi.fgctl",
         "defaultLauncher": "sample-fgctl"
       },
       "sap.ui": {
@@ -616,9 +616,9 @@
         }
       }
     },
-    "samples.applications.ctlcmp": {
+    "com.altarkawi.ctlcmp": {
       "sap.app": {
-        "id": "samples.applications.ctlcmp",
+        "id": "com.altarkawi.ctlcmp",
         "applicationVersion": {
           "version": "1.0.0"
         },
@@ -639,10 +639,10 @@
       },
       "sap.ui5": {
         "models": {},
-        "componentName": "samples.applications.ctlcmp"
+        "componentName": "com.altarkawi.ctlcmp"
       },
       "sap.flp": {
-        "businessApp": "samples.applications.ctlcmp",
+        "businessApp": "com.altarkawi.ctlcmp",
         "defaultLauncher": "sample-ctlcmp"
       },
       "sap.ui": {
@@ -662,9 +662,9 @@
         }
       }
     },
-    "samples.applications.dlghlp": {
+    "com.altarkawi.dlghlp": {
       "sap.app": {
-        "id": "samples.applications.dlghlp",
+        "id": "com.altarkawi.dlghlp",
         "applicationVersion": {
           "version": "1.0.0"
         },
@@ -685,10 +685,10 @@
       },
       "sap.ui5": {
         "models": {},
-        "componentName": "samples.applications.dlghlp"
+        "componentName": "com.altarkawi.dlghlp"
       },
       "sap.flp": {
-        "businessApp": "samples.applications.dlghlp",
+        "businessApp": "com.altarkawi.dlghlp",
         "defaultLauncher": "sample-dlghlp"
       },
       "sap.ui": {
@@ -708,9 +708,9 @@
         }
       }
     },
-    "samples.applications.gstate": {
+    "com.altarkawi.gstate": {
       "sap.app": {
-        "id": "samples.applications.gstate",
+        "id": "com.altarkawi.gstate",
         "applicationVersion": {
           "version": "1.0.0"
         },
@@ -731,10 +731,10 @@
       },
       "sap.ui5": {
         "models": {},
-        "componentName": "samples.applications.gstate"
+        "componentName": "com.altarkawi.gstate"
       },
       "sap.flp": {
-        "businessApp": "samples.applications.gstate",
+        "businessApp": "com.altarkawi.gstate",
         "defaultLauncher": "sample-gstate"
       },
       "sap.ui": {
@@ -754,9 +754,9 @@
         }
       }
     },
-    "samples.applications.utmsbx": {
+    "com.altarkawi.utmsbx": {
       "sap.app": {
-        "id": "samples.applications.utmsbx",
+        "id": "com.altarkawi.utmsbx",
         "applicationVersion": {
           "version": "1.0.0"
         },
@@ -777,10 +777,10 @@
       },
       "sap.ui5": {
         "models": {},
-        "componentName": "samples.applications.utmsbx"
+        "componentName": "com.altarkawi.utmsbx"
       },
       "sap.flp": {
-        "businessApp": "samples.applications.utmsbx",
+        "businessApp": "com.altarkawi.utmsbx",
         "defaultLauncher": "sample-utmsbx"
       },
       "sap.ui": {
@@ -800,9 +800,9 @@
         }
       }
     },
-    "samples.applications.intrfc": {
+    "com.altarkawi.intrfc": {
       "sap.app": {
-        "id": "samples.applications.intrfc",
+        "id": "com.altarkawi.intrfc",
         "applicationVersion": {
           "version": "1.0.0"
         },
@@ -823,10 +823,10 @@
       },
       "sap.ui5": {
         "models": {},
-        "componentName": "samples.applications.intrfc"
+        "componentName": "com.altarkawi.intrfc"
       },
       "sap.flp": {
-        "businessApp": "samples.applications.intrfc",
+        "businessApp": "com.altarkawi.intrfc",
         "defaultLauncher": "sample-intrfc"
       },
       "sap.ui": {
@@ -846,9 +846,9 @@
         }
       }
     },
-    "samples.applications.singlt": {
+    "com.altarkawi.singlt": {
       "sap.app": {
-        "id": "samples.applications.singlt",
+        "id": "com.altarkawi.singlt",
         "applicationVersion": {
           "version": "1.0.0"
         },
@@ -869,10 +869,10 @@
       },
       "sap.ui5": {
         "models": {},
-        "componentName": "samples.applications.singlt"
+        "componentName": "com.altarkawi.singlt"
       },
       "sap.flp": {
-        "businessApp": "samples.applications.singlt",
+        "businessApp": "com.altarkawi.singlt",
         "defaultLauncher": "sample-singlt"
       },
       "sap.ui": {

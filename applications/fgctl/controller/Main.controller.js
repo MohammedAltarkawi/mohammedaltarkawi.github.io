@@ -3,7 +3,7 @@ sap.ui.define([
   'sap/ui/model/json/JSONModel',
   'sap/m/MessageToast'
 ], function (BaseController, JSONModel, MessageToast) {
-  return BaseController.extend('samples.applications.fgctl.controller.Main', {
+  return BaseController.extend('com.altarkawi.fgctl.controller.Main', {
     onInit: function () {
       this.defaultModel = {
         firstValue: 0,

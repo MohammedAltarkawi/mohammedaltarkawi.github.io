@@ -1,7 +1,7 @@
 sap.ui.define([
   'samples/util/BaseController'
 ], function (BaseController) {
-  return BaseController.extend('samples.applications.utctrl.controller.Main', {
+  return BaseController.extend('com.altarkawi.utctrl.controller.Main', {
     _adjustSIControls: function ({ specialInstructionsVisible, finalizeReviewEnabled, acknowledgeSIVisible }) {
       this.byId('siContent').setVisible(specialInstructionsVisible);
       this.byId('finalizeReview').setEnabled(finalizeReviewEnabled);

@@ -1,7 +1,7 @@
 {
   "_version": "1.6.0",
   "sap.app": {
-    "id": "samples.applications._template",
+    "id": "com.altarkawi._template",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -35,7 +35,7 @@
   },
   "sap.ui5": {
     "rootView": {
-      "viewName": "samples.applications._template.view.Main",
+      "viewName": "com.altarkawi._template.view.Main",
       "type": "XML",
       "async": true
     },
@@ -55,7 +55,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "samples.applications._template.i18n.i18n"
+          "bundleName": "com.altarkawi._template.i18n.i18n"
         }
       }
     }

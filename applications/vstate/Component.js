@@ -1,7 +1,7 @@
 sap.ui.define([
   'sap/ui/core/UIComponent'
 ], function (UIComponent) {
-  return UIComponent.extend('samples.applications.vstate.Component', {
+  return UIComponent.extend('com.altarkawi.vstate.Component', {
     metadata: {
       manifest: 'json'
     }

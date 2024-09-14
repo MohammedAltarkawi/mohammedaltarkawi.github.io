@@ -3,7 +3,7 @@ sap.ui.define([
   'sap/m/MessageToast',
   'samples/applications/singlt/Singleton'
 ], function (BaseController, MessageToast, Singleton) {
-  return BaseController.extend('samples.applications.singlt.controller.Main', {
+  return BaseController.extend('com.altarkawi.singlt.controller.Main', {
     onNewAndAdd: function () {
       const singleton = new Singleton();
       const value = singleton.add();

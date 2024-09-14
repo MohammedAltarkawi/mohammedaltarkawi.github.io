@@ -5,7 +5,7 @@ sap.ui.define([
   'sap/m/MessageToast'
 // eslint-disable-next-line max-params
 ], function (BaseController, asyncEventHandler, ExampleDialog, MessageToast) {
-  return BaseController.extend('samples.applications.dlghlp.controller.Main', {
+  return BaseController.extend('com.altarkawi.dlghlp.controller.Main', {
     onInit: function () {
       this._dialog = new ExampleDialog({
         view: this.view

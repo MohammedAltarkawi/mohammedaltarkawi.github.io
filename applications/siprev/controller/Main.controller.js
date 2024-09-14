@@ -2,7 +2,7 @@ sap.ui.define([
   'samples/util/BaseController',
   'sap/ui/model/json/JSONModel'
 ], function (BaseController, JSONModel) {
-  return BaseController.extend('samples.applications.siprev.controller.Main', {
+  return BaseController.extend('com.altarkawi.siprev.controller.Main', {
     onInit: function () {
       this.objectModel = new JSONModel({});
       this.viewState = new JSONModel({

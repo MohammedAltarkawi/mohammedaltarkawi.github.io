@@ -1,8 +1,8 @@
 <mvc:View
-  controllerName="samples.applications.fgctl.controller.Main"
+  controllerName="com.altarkawi.fgctl.controller.Main"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m"
-  xmlns:custom="samples.applications.fgctl.control"
+  xmlns:custom="com.altarkawi.fgctl.control"
   displayBlock="true"
 >
   <App>

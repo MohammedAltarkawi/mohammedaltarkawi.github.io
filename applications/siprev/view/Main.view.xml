@@ -1,5 +1,5 @@
 <mvc:View
-  controllerName="samples.applications.siprev.controller.Main"
+  controllerName="com.altarkawi.siprev.controller.Main"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m"
   xmlns:f="sap.ui.layout.form"
@@ -30,7 +30,7 @@
             columnsXL="1"
             columnsL="1"
             columnsM="1"
-            singleContainerFullSize="false"  
+            singleContainerFullSize="false"
           >
             <f:content>
               <Label text="{i18n>check.sirequired.label}" />
@@ -48,7 +48,7 @@
             text="{i18n>msg.siContent}"
             type="Warning"
             showIcon="true"
-           />
+          />
           <Button id="ackSI"
             visible="{= ${viewState>/siRequired} &amp;&amp; !${specialInstruction} }"
             text="{i18n>btn.ackSI}"

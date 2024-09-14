@@ -29,20 +29,20 @@ console.log('Group ID :', targetGroupId, '\nTile ID :', tileId);
 cdmConfig.catalogs.SampleApps.payload.viz.push(name);
 cdmConfig.visualizations[name] = {
   vizType: 'sap.ushell.StaticAppLauncher',
-  businessApp: `samples.applications.${name}`,
+  businessApp: `com.altarkawi.${name}`,
   vizConfig: {
     'sap.flp': {
       target: {
-        appId: `samples.applications.${name}`,
+        appId: `com.altarkawi.${name}`,
         inboundId: `sample-${name}`,
         parameters: {}
       }
     }
   }
 };
-cdmConfig.applications[`samples.applications.${name}`] = {
+cdmConfig.applications[`com.altarkawi.${name}`] = {
   'sap.app': {
-    id: `samples.applications.${name}`,
+    id: `com.altarkawi.${name}`,
     applicationVersion: {
       version: '1.0.0'
     },
@@ -63,10 +63,10 @@ cdmConfig.applications[`samples.applications.${name}`] = {
   },
   'sap.ui5': {
     models: {},
-    componentName: `samples.applications.${name}`
+    componentName: `com.altarkawi.${name}`
   },
   'sap.flp': {
-    businessApp: `samples.applications.${name}`,
+    businessApp: `com.altarkawi.${name}`,
     defaultLauncher: `sample-${name}`
   },
   'sap.ui': {

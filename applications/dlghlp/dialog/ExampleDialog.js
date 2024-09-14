@@ -2,7 +2,7 @@ sap.ui.define([
   'samples/util/DialogController',
   'sap/m/MessageToast'
 ], function (DialogController, MessageToast) {
-  return DialogController.extend('samples.applications.dlghlp.dialog.ExampleDialog', {
+  return DialogController.extend('com.altarkawi.dlghlp.dialog.ExampleDialog', {
     onInit: async function () {
       this.byId('switch').setTooltip(await this.i18n('dialog.switch.label'));
       this.defaultModel = {};

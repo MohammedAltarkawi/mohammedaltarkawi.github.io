@@ -5,7 +5,7 @@ sap.ui.define([
   'sap/m/MessageBox'
 // eslint-disable-next-line max-params
 ], function (BaseController, messageBox, asyncEventHandler, MessageBox) {
-  return BaseController.extend('samples.applications.msgbox.controller.Main', {
+  return BaseController.extend('com.altarkawi.msgbox.controller.Main', {
     onInfo: asyncEventHandler(async function () {
       await messageBox(await this.i18n('btn.info.message'));
     }),

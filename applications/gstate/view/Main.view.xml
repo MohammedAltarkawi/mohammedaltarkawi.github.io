@@ -1,5 +1,5 @@
 <mvc:View
-  controllerName="samples.applications.gstate.controller.Main"
+  controllerName="com.altarkawi.gstate.controller.Main"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m"
   displayBlock="true"

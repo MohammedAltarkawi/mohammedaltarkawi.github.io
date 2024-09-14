@@ -1,5 +1,5 @@
 <mvc:View
-  controllerName="samples.applications._template.controller.Main"
+  controllerName="com.altarkawi._template.controller.Main"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m"
   displayBlock="true"

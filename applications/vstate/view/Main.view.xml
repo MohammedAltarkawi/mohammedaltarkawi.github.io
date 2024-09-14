@@ -1,5 +1,5 @@
 <mvc:View
-  controllerName="samples.applications.vstate.controller.Main"
+  controllerName="com.altarkawi.vstate.controller.Main"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m"
   xmlns:f="sap.ui.layout.form"
@@ -23,7 +23,7 @@
           columnsXL="1"
           columnsL="1"
           columnsM="1"
-          singleContainerFullSize="false"  
+          singleContainerFullSize="false"
         >
           <f:content>
             <Label text="{i18n>form.input.label}" />
@@ -38,9 +38,9 @@
               <core:Item key="Information" text="Information" />
               <core:Item key="Success" text="Success" />
               <core:Item key="Warning" text="Warning" />
-            </Select>    
+            </Select>
             <Label text="Value state text" />
-            <Input value="{/valueStateText}"/>
+            <Input value="{/valueStateText}" />
           </f:content>
         </f:SimpleForm>
       </Page>

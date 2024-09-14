@@ -5,7 +5,7 @@ sap.ui.define([
 ], function (UIComponent, eventBus, models) {
   let numberOfTimesOpened = 0;
 
-  const Component = UIComponent.extend('samples.applications.gstate.Component', {
+  const Component = UIComponent.extend('com.altarkawi.gstate.Component', {
     metadata: {
       manifest: 'json'
     },
