@@ -1,7 +1,7 @@
 sap.ui.define([], function () {
   const renderer = sap.ushell.Container.getRenderer('fiori2');
   // eslint-disable-next-line sap-no-hardcoded-url
-  const baseUrl = 'https://github.com/Clean-UI5/samples';
+  const baseUrl = 'https://github.com/MohammedAltarkawi/js-ui5-launchpad';
   renderer.addUserAction({
     controlType: 'sap.m.Button',
     oControlProperties: {
