@@ -1,73 +1,169 @@
 {
-	"_version": "1.12.0",
-	"sap.app": {
-		"id": "com.altarkawi.capi",
-		"type": "application",
-		"i18n": "i18n/i18n.properties",
-		"title": "{{appTitle}}",
-		"description": "{{appDescription}}",
-		"applicationVersion": {
-			"version": "${version}"
-		}
-	},
-	"sap.ui": {
-		"technology": "UI5",
-		"icons": {},
-		"deviceTypes": {
-			"desktop": true,
-			"tablet": true,
-			"phone": true
-		}
-	},
-	"sap.ui5": {
-		"rootView": {
-			"viewName": "com.altarkawi.capi.view.App",
-			"type": "XML",
-			"async": true,
-			"id": "app"
-		},
-		"dependencies": {
-			"minUI5Version": "1.128.0",
-			"libs": {
-				"sap.ui.core": {},
-				"sap.m": {}
-			}
-		},
-		"handleValidation": true,
-		"contentDensities": {
-			"compact": true,
-			"cozy": true
-		},
-		"models": {
-			"i18n": {
-				"type": "sap.ui.model.resource.ResourceModel",
-				"settings": {
-					"bundleName": "com.altarkawi.capi.i18n.i18n"
-				}
-			}
-		},
-		"routing": {
-			"config": {
-				"routerClass": "sap.m.routing.Router",
-				"viewType": "XML",
-				"viewPath": "com.altarkawi.capi.view",
-				"controlId": "app",
-				"controlAggregation": "pages",
-				"async": true
-			},
-			"routes": [
-				{
-					"pattern": "",
-					"name": "main",
-					"target": "main"
-				}
-			],
-			"targets": {
-				"main": {
-					"viewId": "main",
-					"viewName": "Main"
-				}
-			}
-		}
-	}
+  "_version": "1.59.0",
+  "sap.app": {
+    "id": "com.altarkawi.capi",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:lrop",
+      "version": "1.13.0",
+      "toolsId": "bff23d8f-67ca-4806-8e17-85f96b959fc5"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "https://cap-capi.onrender.com/odata/v4/catalog/",
+        "type": "OData",
+        "settings": {
+          "annotations": [
+            "annotation"
+          ],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "4.0"
+        }
+      },
+      "annotation": {
+        "type": "ODataAnnotation",
+        "uri": "annotations/annotation.xml",
+        "settings": {
+          "localUri": "annotations/annotation.xml"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.129.2",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.ushell": {},
+        "sap.fe.templates": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.altarkawi.capi.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "synchronizationMode": "None",
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
+      },
+      "@i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "uri": "i18n/i18n.properties"
+      }
+    },
+    "resources": {
+      "css": []
+    },
+    "routing": {
+      "config": {},
+      "routes": [
+        {
+          "pattern": ":?query:",
+          "name": "API2022List",
+          "target": "API2022List"
+        },
+        {
+          "pattern": "API2022({key}):?query:",
+          "name": "API2022ObjectPage",
+          "target": "API2022ObjectPage"
+        },
+        {
+          "pattern": "API2022({key})/successors({key2}):?query:",
+          "name": "SuccessorsObjectPage",
+          "target": "SuccessorsObjectPage"
+        }
+      ],
+      "targets": {
+        "API2022List": {
+          "type": "Component",
+          "id": "API2022List",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "contextPath": "/API2022",
+              "variantManagement": "Page",
+              "navigation": {
+                "API2022": {
+                  "detail": {
+                    "route": "API2022ObjectPage"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "API2022ObjectPage": {
+          "type": "Component",
+          "id": "API2022ObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/API2022",
+              "navigation": {
+                "successors": {
+                  "detail": {
+                    "route": "SuccessorsObjectPage"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SuccessorsObjectPage": {
+          "type": "Component",
+          "id": "SuccessorsObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/API2022/successors"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional"
+  }
 }
