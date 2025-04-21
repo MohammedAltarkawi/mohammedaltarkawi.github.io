@@ -1,0 +1,2 @@
+"use strict";sap.ui.define([],function(){"use strict";var t=function(t){t["V2022"]="https://raw.githubusercontent.com/SAP/abap-atc-cr-cv-s4hc/main/src/objectReleaseInfo_PCE2023_1.json";t["V2023"]="https://raw.githubusercontent.com/SAP/abap-atc-cr-cv-s4hc/main/src/objectReleaseInfo_PCE2022_2.json";return t}(t||{});var e={__esModule:true};e.LINKS=t;return e});
+//# sourceMappingURL=Enums.js.map
