@@ -1,3 +1,8 @@
-# Clean SAPUI5 book samples
+# 🚀 My Fork of [ Sample ]
 
-[![Clean UI5](https://s3-eu-west-1.amazonaws.com/cover2.galileo-press.de/print/9781493222285_800_2d.png)](https://www.sap-press.com/clean-sapui5_5479/)
+This is a modified version of [Original Project Name](https://github.com/Clean-UI5/samples), originally created by [ArnaudBuchholz](https://github.com/ArnaudBuchholz). I'm playing around with the code, tweaking features, and experimenting for fun and learning.
+
+## 💻 Getting Started
+
+```bash
+npm install http-server
