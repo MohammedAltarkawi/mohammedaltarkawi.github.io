@@ -5,4 +5,4 @@ This is a modified version of [Sample](https://github.com/Clean-UI5/samples), or
 ## 💻 Getting Started
 
 ```bash
-npm install http-server
+http-server
