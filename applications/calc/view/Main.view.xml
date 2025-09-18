@@ -1,0 +1,97 @@
+<mvc:View
+    controllerName="com.altarkawi.calc.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true"
+>
+    <App>
+        <pages>
+            <Page
+                id="page"
+                title="{i18n>app.title}"
+            >
+                <FlexBox
+                    direction="Column"
+                    alignItems="Center"
+                    justifyContent="Center"
+                    height="100%"
+                    width="100%"
+                    fitContainer="true"
+                    class="sapUiSmallMargin"
+                >
+                    <Input
+                        id="inputNr"
+                        placeholder="Enter a number"
+                        width="200px"
+                    />
+                    <Input
+                        id="inputPr"
+                        value="7.6"
+                        placeholder="Enter a percent"
+                        width="200px"
+                    />
+                    <DatePicker
+                        id="DP"
+                        placeholder="Enter Date"
+                        change="handleChange"
+                        class="sapUiSmallMarginBottom"
+                    />
+                    <Button
+                        text="Calculate"
+                        press=".onCalculate"
+                        class="sapUiSmallMarginTop"
+                    />
+                    <VBox>
+                        <!-- Group 1 -->
+                        <FlexBox
+                            direction="Row"
+                           
+                        >
+                            <Label
+                                text="Daily:"
+                                labelFor="daily"
+                            />
+                            <Text
+                                id="daily"
+                                text=""
+                                class="sapUiSmallMarginBegin"
+                            />
+                        </FlexBox>
+
+                        <!-- Group 2 -->
+                        <FlexBox
+                            direction="Row"
+                            alignItems="Center"
+                        >
+                            <Label
+                                text="Monthly:"
+                                labelFor="monthly"
+                            />
+                            <Text
+                                id="monthly"
+                                text=""
+                                class="sapUiSmallMarginBegin"
+                            />
+                        </FlexBox>
+
+                        <!-- Group 3 -->
+                        <FlexBox
+                            direction="Row"
+                            alignItems="Center"
+                        >
+                            <Label
+                                text="Result:"
+                                labelFor="result"
+                            />
+                            <Text
+                                id="result"
+                                text=""
+                                class="sapUiSmallMarginBegin"
+                            />
+                        </FlexBox>
+                    </VBox>
+                </FlexBox>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
